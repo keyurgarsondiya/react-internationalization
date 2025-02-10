@@ -1,50 +1,66 @@
-# React + TypeScript + Vite
+# React Internationalization Template
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+This is a simple React app template showcasing how to integrate **Internationalization (i18n)** into a React project using industry-standard code practices. It provides an easy-to-use setup for developers looking to support multiple languages in their applications.
 
-Currently, two official plugins are available:
+By using this template, you can quickly set up i18n in your React projects and scale it as needed.
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+## Features
 
-## Expanding the ESLint configuration
+- Industry-standard practices for **Internationalization (i18n)**.
+- Scalable architecture to support more languages in the future.
+- Easy-to-use structure, making it simple to integrate into your projects.
+- Ready to be deployed using **Vercel**.
 
-If you are developing a production application, we recommend updating the configuration to enable type aware lint rules:
+## Demo
 
-- Configure the top-level `parserOptions` property like this:
+You can see the live demo of the app deployed on Vercel:
 
-```js
-export default tseslint.config({
-  languageOptions: {
-    // other options...
-    parserOptions: {
-      project: ['./tsconfig.node.json', './tsconfig.app.json'],
-      tsconfigRootDir: import.meta.dirname,
-    },
-  },
-})
+[Live Demo](https://react-internationalization-eng.vercel.app/)
+
+## Installation
+
+To get started with this template, follow these steps:
+
+### 1. Clone the Repository
+
+```bash
+git clone https://github.com/keyurgarsondiya/react-internationalization.git
 ```
 
-- Replace `tseslint.configs.recommended` to `tseslint.configs.recommendedTypeChecked` or `tseslint.configs.strictTypeChecked`
-- Optionally add `...tseslint.configs.stylisticTypeChecked`
-- Install [eslint-plugin-react](https://github.com/jsx-eslint/eslint-plugin-react) and update the config:
+### 2. Install Dependencies
 
-```js
-// eslint.config.js
-import react from 'eslint-plugin-react'
+Navigate to the project directory and install dependencies:
 
-export default tseslint.config({
-  // Set the react version
-  settings: { react: { version: '18.3' } },
-  plugins: {
-    // Add the react plugin
-    react,
-  },
-  rules: {
-    // other rules...
-    // Enable its recommended rules
-    ...react.configs.recommended.rules,
-    ...react.configs['jsx-runtime'].rules,
-  },
-})
+```bash
+cd react-internationalization
+npm install
 ```
+
+### 3. Start the Development Server
+
+Run the app in development mode:
+
+```bash
+npm start
+```
+
+The app will be available at [http://localhost:3000](http://localhost:3000).
+
+## How to Use
+
+- The app supports multiple languages out of the box. You can add new languages by following the structure in the `src/i18n` folder.
+- Simply import the necessary translation files and use them in your components as shown in the provided examples.
+
+### Adding New Languages:
+
+1. Create a new translation file in the `src/i18n` folder for the language you wish to add.
+2. Update the `src/constants/languages.ts` file to include your new language.
+3. Use the translation keys in your components wherever needed.
+
+## Contributing
+
+Feel free to fork this project, make improvements, or contribute with new features! If you make any changes or improvements, open a pull request, and I will review it.
+
+## Support
+
+If you have any questions or suggestions, feel free to open an issue or contact me directly via my [LinkedIn](https://www.linkedin.com/in/keyurgarsondiya).
