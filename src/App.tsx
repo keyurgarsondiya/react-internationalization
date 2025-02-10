@@ -1,5 +1,5 @@
 import { IntlProvider } from './store';
-import HomePage from './pages/home';
+import HomePage from './pages';
 
 function App() {
   return (
